@@ -4,11 +4,11 @@ A warm, honest household budget site: one family, one ledger. Track income and
 spending, set monthly budgets per category, save toward goals, keep recurring
 bills in view, and read a plain-English report of what the numbers mean.
 
-![make.fun badge](https://make.fun/badge/best-household-budget-site-20261126-1457.svg)
-![make.fun rank](https://make.fun/badge/best-household-budget-site-20261126-1457/verrydimah-cpu/household-budget-site/rank.svg)
-![make.fun reward](https://make.fun/badge/best-household-budget-site-20261126-1457/verrydimah-cpu/household-budget-site/reward.svg)
+[![make.fun · best-household-budget-site-20261126-1457](https://make.fun/badge/best-household-budget-site-20261126-1457.svg)](https://make.fun/bounty/best-household-budget-site-20261126-1457?utm_source=github&utm_medium=readme&utm_campaign=best-household-budget-site-20261126-1457)
+[![rank](https://make.fun/badge/best-household-budget-site-20261126-1457/verrydimah-cpu/household-budget-site/rank.svg)](https://make.fun/bounty/best-household-budget-site-20261126-1457/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-household-budget-site-20261126-1457)
+[![reward](https://make.fun/badge/best-household-budget-site-20261126-1457/verrydimah-cpu/household-budget-site/reward.svg)](https://make.fun/bounty/best-household-budget-site-20261126-1457?utm_source=github&utm_medium=readme&utm_campaign=best-household-budget-site-20261126-1457)
 
-Competition: https://make.fun/c/best-household-budget-site-20261126-1457
+Competition: https://make.fun/bounty/best-household-budget-site-20261126-1457
 
 ## What it does
 
