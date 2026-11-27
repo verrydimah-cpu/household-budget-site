@@ -1,7 +1,7 @@
 // Hearth & Ledger — dossier builder.
 // Stages the static site and screenshots into the output directory, then asks
 // the make.fun frontend helper to assemble dossier.json from them.
-import { cpSync, existsSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildDossier } from './vendor/makefun-frontend.ts';
@@ -9,8 +9,13 @@ import { buildDossier } from './vendor/makefun-frontend.ts';
 const here = dirname(fileURLToPath(import.meta.url));
 const outDir = resolve(process.env.MAKEFUN_OUTPUT_DIR ?? '/output');
 
-rmSync(outDir, { recursive: true, force: true });
+// Prepare the output directory by clearing only its contents, entry by
+// entry. Never remove outDir itself: in the grader it may be a mounted
+// volume, and removing a mount point fails with EBUSY.
 mkdirSync(outDir, { recursive: true });
+for (const entry of readdirSync(outDir)) {
+  rmSync(join(outDir, entry), { recursive: true, force: true });
+}
 
 for (const name of ['app', 'screenshots']) {
   const src = join(here, name);
